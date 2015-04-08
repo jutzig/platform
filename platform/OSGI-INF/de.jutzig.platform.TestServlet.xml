@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="de.jutzig.platform.TestServlet">
+        <implementation class="de.jutzig.platform.TestServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="alias" value="/*"/>
+        <property name="init.UI" value="de.jutzig.platform.MyprojectUI"/>
+        <property name="UI" value="de.jutzig.platform.MyprojectUI2"/>
+        <property name="service.pid" value="de.jutzig.platform.TestServlet"/>
+    </scr:component>
+</components>
